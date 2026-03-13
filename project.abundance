@@ -1,13 +1,133 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-332",
-    "name": "tutorial-default",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-332",
+  "name": "tutorial-default",
+  "ioValues": [
+    {
+      "name": "Thickness",
+      "ioValue": 2,
+      "currentEquation": "2"
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-333",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.48336252189141854,
+      "uniqueID": "id-335",
+      "name": "Thickness"
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.11984536082474227,
+      "y": 0.2626970227670753,
+      "uniqueID": "id-338",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 50
+        },
+        {
+          "name": "y length",
+          "ioValue": 50,
+          "currentEquation": "50"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.24677835051546393,
+      "y": 0.3870402802101576,
+      "uniqueID": "id-342",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 2,
+          "currentEquation": "2"
+        }
+      ]
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.2551546391752577,
+      "y": 0.6147110332749562,
+      "uniqueID": "id-346",
+      "name": "Molecule",
+      "ioValues": [
+        {
+          "name": "Thickness",
+          "ioValue": 2
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-348",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-350",
+          "name": "Thickness",
+          "type": "number"
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "height",
+      "ap1ID": "id-335",
+      "ap2ID": "id-342"
+    },
+    {
+      "ap2Name": "Thickness",
+      "ap1ID": "id-335",
+      "ap2ID": "id-346"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-338",
+      "ap2ID": "id-342"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-342",
+      "ap2ID": "id-333"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
